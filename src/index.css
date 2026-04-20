@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-ink: #111111;
+  --color-ink-muted: #555555;
+  --color-line: #111111;
+  --color-line-soft: #e0e0e0;
+  --color-panel: #f4f4f4;
+}
+
+@layer base {
+  body {
+    @apply bg-[#c8c8c8] font-sans text-ink antialiased;
+  }
+}
+
+.brutal-shadow {
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+}
+
+.brutal-border {
+  @apply border-1 border-line;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
